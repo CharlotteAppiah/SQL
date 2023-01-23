@@ -1,0 +1,29 @@
+Create a store database
+
+CREATE TABLE bakery (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, shelf_life TEXT);
+
+INSERT INTO bakery VALUES (1, "Sourdough Bread", 20, 4, "5 days");
+INSERT INTO bakery VALUES (2, "Croissant", 5, 2, "1 day");
+INSERT INTO bakery VALUES (3, "Lemon Tart", 12, 3, "2 days");
+INSERT INTO bakery VALUES (4, "Baguette", 10, 2, "1 day");
+INSERT INTO bakery VALUES (5, "Raspberry Danish", 15, 2, "3 days");
+INSERT INTO bakery VALUES (6, "Chocolate Mousse", 10, 4, "7 days");
+INSERT INTO bakery VALUES (7, "Pistachio Macaron", 30, 2, "2 days");
+INSERT INTO bakery VALUES (8, "Strawberry Charlotte", 1, 20, "4 days");
+INSERT INTO bakery VALUES (9, "Pain au Chocolat", 8, 3, "1 day");
+INSERT INTO bakery VALUES (10, "Mango Mille-feuille", 4, 6, "3 days");
+INSERT INTO bakery VALUES (11, "Black Forest Pastry", 6, 5, "6 days");
+INSERT INTO bakery VALUES (12, "Multigrain Bread", 15, 4, "5 days");
+INSERT INTO bakery VALUES (13, "Tarte Tatin", 1, 12, "4 days");
+INSERT INTO bakery VALUES (14, "Madeleines", 16, 2, "7 days");
+INSERT INTO bakery VALUES (15, "Brioche", 10, 5, "2 days");
+
+
+order the database by price 
+
+SELECT FROM bakery ORDER BY price;
+
+
+how many eaches does the entire database contain
+
+SELECT SUM(quantity) FROM bakery;
